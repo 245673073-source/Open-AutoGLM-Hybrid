@@ -90,7 +90,8 @@ install_python_packages() {
     #python -m pip install --upgrade pip
     
     # 安装依赖
-    pip install pillow openai requests -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+    #pip install requests
+    pip install pillow openai -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
     
     print_success "Python 依赖安装完成"
 }
