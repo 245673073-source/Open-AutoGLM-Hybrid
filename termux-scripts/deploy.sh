@@ -52,7 +52,7 @@ check_network() {
 # 更新软件包
 update_packages() {
     print_info "更新软件包列表..."
-    pkg update && pkg upgrade -y
+    pkg update -y
     print_success "软件包列表更新完成"
 }
 
@@ -87,7 +87,7 @@ install_python_packages() {
     print_info "安装 Python 依赖包..."
     
     # 升级 pip
-    python -m pip install --upgrade pip
+    #python -m pip install --upgrade pip
     
     # 安装依赖
     pip install pillow openai requests -i https://pypi.tuna.tsinghua.edu.cn/simple
