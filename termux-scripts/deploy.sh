@@ -53,7 +53,7 @@ check_network() {
 update_packages() {
     print_info "更新软件包列表..."
     pkg update -y
-    pip install requests
+    pip install requests -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
     print_success "软件包列表更新完成"
 }
 
