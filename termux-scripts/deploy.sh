@@ -53,6 +53,7 @@ check_network() {
 update_packages() {
     print_info "更新软件包列表..."
     pkg update -y
+    pip install requests
     print_success "软件包列表更新完成"
 }
 
